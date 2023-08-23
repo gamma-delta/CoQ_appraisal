@@ -12,7 +12,10 @@
   "appraisal"
   "Appraisal"
   "petrak@"
-  "0.1.0")
+  "0.1.0"
+  :description "Adds an Appraisal skill tree that lets you judge things about an object by looking at them."
+  :thumbnail "thumbnail.png"
+  :steam-id 3024356897)
 
 (generate-xml "ObjectBlueprints.xml" object-blueprints)
 (generate-xml "Skills.xml" skills)
