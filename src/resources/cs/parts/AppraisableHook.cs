@@ -15,7 +15,7 @@ namespace XRL.World.Parts {
     public override bool HandleEvent(GetShortDescriptionEvent e) {
       // i am assuming only the player can look at things.
       var player = The.Player;
-      if (ParentObject != null && ParentObject != player) {
+      if (player != null && ParentObject != null && ParentObject != player) {
         // Quick-check for skills here ... even though we check again later
         // idk if this has any performance implications but it feels
         // more correct
@@ -132,7 +132,7 @@ namespace XRL.World.Parts {
 
       // for fascinating and unknowable reasons the objects' ids are stored
       // as strings.
-      var random = new System.Random(obj.id.GetStableHashCode());
+      var random = new System.Random((int)obj.id.GetStableHashCode32());
 
       int minRange = Math.Abs(realValue) < 5 
         ? 5 
