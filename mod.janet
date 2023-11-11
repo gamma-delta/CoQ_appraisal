@@ -13,7 +13,7 @@
   "appraisal"
   "Appraisal"
   "petrak@"
-  "0.2.0"
+  "0.3.0"
   :description "Adds an Appraisal skill tree that lets you judge things about an object by looking at them."
   :thumbnail "thumbnail.png"
   :steam-id 3024356897)
